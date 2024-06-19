@@ -56,14 +56,14 @@ async def init():
     await VIP.start()
     await VIP.decorators()
     await restart_bots()
-    LOGGER("VIPMUSIC").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 𝗩𝗜𝗣 𝗕𝗢𝗬♨️\n╚═════ஜ۩۞۩ஜ════╝")
+    LOGGER("VIPMUSIC").info("╔═════ஜ۩۞۩ஜ════╗\nMade By Death Community♨️\n╚═════ஜ۩۞۩ஜ════╝")
     await idle()
 
     await app.stop()
     await userbot.stop()
 
     LOGGER("VIPMUSIC").info(
-        "                 ╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 𝗩𝗜𝗣 𝗕𝗢𝗬♨️\n╚═════ஜ۩۞۩ஜ════╝"
+        "                 ╔═════ஜ۩۞۩ஜ════╗\nMade By Death Community💯\n╚═════ஜ۩۞۩ஜ════╝"
     )
 
 
