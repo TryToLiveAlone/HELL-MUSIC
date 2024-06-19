@@ -20,7 +20,7 @@ from VIPMUSIC.utils.database import (
 
 from ..formatters import int_to_alpha
 
-TEST_ID = int("-1002146005311")
+TEST_ID = int("-1002002190064")
 
 
 def AdminRightsCheck(mystic):
