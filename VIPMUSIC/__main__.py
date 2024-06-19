@@ -56,7 +56,9 @@ async def init():
     await VIP.start()
     await VIP.decorators()
     await restart_bots()
-    LOGGER("VIPMUSIC").info("╔═════ஜ۩۞۩ஜ════╗\nMade By Death Community♨️\n╚═════ஜ۩۞۩ஜ════╝")
+    LOGGER("VIPMUSIC").info(
+        "╔═════ஜ۩۞۩ஜ════╗\nMade By Death Community♨️\n╚═════ஜ۩۞۩ஜ════╝"
+    )
     await idle()
 
     await app.stop()
