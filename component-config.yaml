@@ -1,0 +1,62 @@
+# .choreo/component-config.yaml
+
+version: "1.0"
+component:
+  name: MyComponent
+  type: worker
+  language: python
+
+# Environment variables for the component
+environment:
+  variables:
+    - name: DATABASE_URL
+      value: "your-database-url"
+    - name: SECRET_KEY
+      value: "your-secret-key"
+    - name: DEBUG
+      value: "true"
+    - name: ANOTHER_ENV_VAR
+      value: "value"
+
+# Dependencies for the component using requirements.txt
+dependencies:
+  python:
+    file: requirements.txt
+
+# Configuration for the deployment
+deployment:
+  replicas: 1  # Set the number of replicas
+  resources:
+    limits:
+      memory: "512Mi"
+      cpu: "0.5"
+    requests:
+      memory: "256Mi"
+      cpu: "0.25"
+
+# Health check configuration
+healthCheck:
+  enabled: true
+  path: "/health"
+  interval: 30
+  timeout: 5
+
+# Logging configuration
+logging:
+  level: INFO
+  format: json
+
+# Monitoring and metrics
+monitoring:
+  enabled: true
+  endpoint: "/metrics"
+
+# Dockerfile configuration for worker
+build:
+  docker:
+    worker: Dockerfile
+
+# Run command for worker
+run:
+  worker: bash start
+  
