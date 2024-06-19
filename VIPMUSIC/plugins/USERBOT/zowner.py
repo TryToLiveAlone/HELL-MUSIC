@@ -13,13 +13,7 @@ async def repo(client: Client, message: Message):
         photo=f"https://mallucampaign.in/images/img_1715526864.jpg",
         caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱[𝐑𝐄𝐏𝐎](https://fuckyou.digital/)🍁""",
         reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://fuckyou.digital/"
-                    )
-                ]
-            ]
+            [[InlineKeyboardButton("🌱ƨσʋяcɛ🌱", url=f"https://fuckyou.digital/")]]
         ),
     )
 
